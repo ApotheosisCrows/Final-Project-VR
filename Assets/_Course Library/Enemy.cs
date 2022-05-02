@@ -9,12 +9,13 @@ public class Enemy : MonoBehaviour
 
     public GameObject Player;
 
-    public float MobDistanceRun = 4.0f;
+    public float MobDistanceRun = 8.0f;
 
     // Start is called before the first frame update
     void Start()
     {
         Mob = GetComponent<NavMeshAgent>();
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
